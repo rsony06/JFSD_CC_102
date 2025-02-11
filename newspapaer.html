@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper flexbox</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            height: 600px;
+        }
+        
+        div > div{
+            border:2px solid;
+            flex-basis: 150px;
+        }
+        #art1{
+            flex-grow: 1;
+            flex-shrink: 0;
+
+        }
+        #art2{
+            flex-grow: 1;
+            flex-shrink:0;
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>DAILY NEWSPAPER</h1>
+    <div class="container">
+        
+        <div id="art1"><h1>Rise in Anti-Minority Hate Speech in India:</h1><img src="https://www.reuters.com/resizer/v2/7XM2JDEIIFPYRIZZLKXXNQXXKQ.jpg?auth=08cb08b7f490667d8fa5e659d33b5e01dc4c46f98c694f7a087cc041b20ac279&width=720&quality=80" height="150px"> In 2024, anti-minority hate speech incidents in India increased by 74%, with 1,165 documented cases compared to 668 in the previous year. A significant portion of these incidents occurred during the national election period. Critics highlight policies perceived as discriminatory, such as the 2019 citizenship law and hijab bans in schools</div>
+        <div id="art2"><h1>India's High Tariffs Under Scrutiny</h1><img src="https://www.reuters.com/resizer/v2/KGW7GCNPKJMQHPQUOHZV3ELP2M.jpg?auth=7574266010cba57b424ff0a4feac7df99ba6675ab79147778aecd92b12073605&width=720&quality=80" height="150px" >Kevin Hassett, a top economic adviser, criticized India's high tariffs, stating they hinder imports. He emphasized the need for reciprocal tariffs and noted that countries like India have significantly higher tariffs compared to others. In response, India is considering reducing tariffs in sectors like electronics and medical equipment to boost U.S. exports and address trade imbalances.</div>
+    
+    </div>
+</body>
+</html>
