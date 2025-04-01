@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Interactive Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EduLearn</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#progress">Progress</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to EduLearn</h2>
+        <p>Your interactive learning platform for engineering students.</p>
+        <img src="https://onlineexammaker.com/img/solutions/head-banner/exammaker-head-banner.webp" 
+        alt="Online Quiz Platform" 
+        class="quiz-image">
+   
+    </section>
+    <section id="courses">
+        <h2>Engineering Courses</h2>
+        <p>Explore various subjects to enhance your technical skills.</p>
+        <div class="course-container">
+            <div class="course-box">Java Programming</div>
+            <div class="course-box"> Cloud Computing</div>
+            <div class="course-box"> Operating Systems</div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="quiz">
+        <h2>Engineering Quiz</h2>
+        <p>Test your knowledge in Java, Cloud Computing, and OS.</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <div id="quizContainer"></div>
+    </section>
+
+    <section id="progress">
+        <h2>Progress Tracker</h2>
+        <p>Track your learning journey.</p>
+        <div id="progressContainer">Progress: 0%</div>
+        <button onclick="updateProgress()">Increase Progress</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
